@@ -1,0 +1,318 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #D4AF37; /* Texto em tom de ouro */
+  background-color: #1c2a48; /* Azul escuro para o fundo */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center; /* Centraliza todo o conteúdo */
+}
+
+/* Cabeçalho */
+header {
+  background: #0e1a2f; /* Azul mais escuro para o header */
+  color: #D4AF37; /* Texto em tom de ouro */
+  padding: 20px 0;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centraliza os itens do menu */
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #D4AF37; /* Texto em tom de ouro */
+  text-decoration: none;
+}
+
+header .btn-destaque {
+  background: #3498db; /* Azul celeste */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Seção Hero */
+.hero {
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+  color: #D4AF37; /* Texto em tom de ouro */
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn-hero {
+  background: #3498db; /* Azul celeste */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Seção de Serviços */
+.servicos {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.servicos h2 {
+  margin-bottom: 40px;
+}
+
+.servicos-lista {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.servico-item {
+  flex: 1 1 200px;
+  margin: 10px;
+  background: #0e1a2f; /* Azul mais escuro para os cards */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.servico-item i {
+  font-size: 2rem;
+  color: #3498db; /* Azul celeste para ícones */
+}
+
+.servico-item h3 {
+  margin: 10px 0;
+}
+
+.servico-item p {
+  font-size: 0.9rem;
+  color: #FFFFFF; /* Branco para o texto */
+}
+
+/* Seção Sobre */
+.sobre {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.sobre h2 {
+  margin-bottom: 20px;
+}
+
+.sobre-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sobre-content img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.sobre-content p {
+  color: #FFFFFF; /* Branco para o texto */
+}
+
+/* Seção Missão, Visão e Valores */
+.missao {
+  background: #0e1a2f; /* Azul mais escuro para o fundo */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.missao h2 {
+  color: #D4AF37; /* Dourado para o título */
+  margin-bottom: 40px;
+}
+
+.missao-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.missao-item {
+  flex: 1 1 300px;
+  background: #1c2a48; /* Azul escuro para os cards */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.missao-item i {
+  font-size: 2rem;
+  color: #3498db; /* Azul celeste para ícones */
+  margin-bottom: 10px;
+}
+
+.missao-item h3 {
+  color: #D4AF37; /* Dourado para os títulos */
+  margin-bottom: 10px;
+}
+
+.missao-item p {
+  color: #FFFFFF; /* Branco para o texto */
+  font-size: 0.9rem;
+}
+
+/* Seção de Depoimentos */
+.depoimentos {
+  background: #0e1a2f; /* Azul mais escuro para o fundo */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.depoimentos h2 {
+  margin-bottom: 40px;
+}
+
+.depoimentos-lista {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.depoimento-item {
+  flex: 1 1 300px;
+  margin: 10px;
+  background: #1c2a48; /* Azul escuro para os cards */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.depoimento-item p {
+  color: #FFFFFF; /* Branco para o texto */
+}
+
+.depoimento-item span {
+  color: #D4AF37; /* Dourado para o nome do cliente */
+}
+
+/* Seção de Chamada para Ação */
+.cta {
+  background: #3498db; /* Azul celeste para destaque */
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: 20px;
+}
+
+.cta .btn-cta {
+  background: #0e1a2f; /* Azul mais escuro para o botão */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Seção de Horário de Funcionamento */
+.horario-funcionamento {
+  background: #0e1a2f; /* Azul mais escuro para o fundo */
+  padding: 30px 0;
+  text-align: center;
+}
+
+.horario-funcionamento h3 {
+  color: #D4AF37; /* Dourado para o título */
+  margin-bottom: 20px;
+}
+
+.horario-funcionamento p {
+  color: #FFFFFF; /* Branco para o texto */
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Seção de Contato */
+.contato {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contato h2 {
+  margin-bottom: 20px;
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contato form input,
+.contato form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contato form button {
+  background: #3498db; /* Azul celeste para o botão */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+  background: #0e1a2f; /* Azul mais escuro para o rodapé */
+  color: #D4AF37; /* Texto em tom de ouro */
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .footer-info {
+  margin-bottom: 20px;
+}
+
+footer .redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+footer .redes-sociais a {
+  color: #D4AF37; /* Texto em tom de ouro */
+  font-size: 1.5rem;
+}
+
+footer .direitos {
+  font-size: 0.9rem;
+}
